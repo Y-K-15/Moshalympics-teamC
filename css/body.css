@@ -1,0 +1,28 @@
+div{
+  padding: 80px 40px 160px;
+}
+
+
+p{
+  color: black;
+  font: 12px;
+  margin: 0px 0px;
+}
+
+.members{
+  width: 30%;
+  height: 50%;
+}
+
+.members:hover{
+  opacity: 0.6;
+  transition-duration: 0.9s;
+}
+
+
+
+.picture {
+  width: 313.48px;
+  height: 313.48px;
+  margin: 0px 0px 10px;
+}

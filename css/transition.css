@@ -1,0 +1,16 @@
+.product_wrapper {
+    display: flex;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+.product_img_wrapper {
+    width: 100%;
+    margin-right: 5rem;
+}
+
+.product_img {
+width: 100%;
+height: 100%;
+}
+
