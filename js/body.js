@@ -6,3 +6,4 @@ for (let i = 1; i < 24; i++) {
   let introduction_box = document.getElementById("introduction_box");
   introduction_box.insertAdjacentHTML('beforeend',introduction);
 }
+

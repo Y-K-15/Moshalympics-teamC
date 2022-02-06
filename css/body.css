@@ -6,7 +6,7 @@
 .page-title{
   color: black;
   font-size: 25px;
-  padding:
+  padding-top: 30px;
 }
 
 /* div{
@@ -37,3 +37,98 @@
   height: 313.48px;
   margin: 0px 0px 10px;
 } */
+
+
+/* communityのページの表のところ */
+/* .table{
+  width: 100%;
+  border-spacing: 0;
+}
+.table th{
+  border-bottom: solid 2px #ddd;
+  padding: 10px 0;
+  
+}
+.table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+} */
+
+
+
+/* p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto 40px;
+} */
+/* .community-table {
+  margin: 20px auto;
+}
+.tbl-r02 th {
+  background: #fff;
+  border-bottom: solid 1px #ccc;
+  color: black;
+  padding: 10px;
+}
+.tbl-r02 td {
+  border-bottom: solid 1px #ccc;
+  padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .last td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+  .tbl-r02 {
+    width: 80%;
+  }
+  .tbl-r02 td {
+    border-bottom: solid 1px #ccc;
+    display: block;
+    width: 100%;
+  }
+  .tb1-r02 th{
+    border-bottom: none 1px #ccc;
+    display: block;
+    width: 100%;
+  }
+} */
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+}
+.table th {
+  width: 22%;
+  background: #aac8ec;
+  border: 1px solid #888482;
+  box-sizing: border-box;
+  padding: 15px;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: center;
+}
+.table td {
+  background: #fff;
+  border: 1px solid #888482;
+  box-sizing: border-box;
+  padding: 15px;
+  vertical-align: top;
+  text-align: left;
+}
+@media all and (max-width: 767px) {
+  .table th, .table td {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+  }
+  .table tr:last-child td:last-child {
+    border-bottom: 1px solid #888482;
+  }
+}
