@@ -6,19 +6,10 @@
 .page-title{
   color: black;
   font-size: 25px;
-  padding:
+  padding-top: 30px;
 }
 
-/* div{
-  padding: 80px 40px 160px;
-} */
 
-
-/* p{
-  color: black;
-  font: 12px;
-  margin: 0px 0px;
-} */
 
 .members{
   width: 30%;
@@ -31,9 +22,3 @@
 }
 
 
-/* 
-.picture {
-  width: 313.48px;
-  height: 313.48px;
-  margin: 0px 0px 10px;
-} */
