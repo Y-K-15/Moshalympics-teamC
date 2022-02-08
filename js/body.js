@@ -156,11 +156,23 @@ function viewmore() {
   }
 };
 
-const loading = document.getElementById('loading')
+const loading = document.getElementById('loading');
+const keyName = 'visited';
+const keyValue = true;
 
-window.addEventListener('DOMContentLoaded', function(){
-  // 5秒後にloading画面終了
-  setTimeout(() => {
-     loading.style.display= "none";
-  }, 5000);
-});
+if (!sessionStorage.getItem(keyName)) {
+    //sessionStorageにキーと値を追加
+    sessionStorage.setItem(keyName, keyValue);
+
+    //ここに初回アクセス時の処理
+    console.log("初めての訪問です");
+    // loading.style.display = "none";
+    setTimeout(() => {
+      loading.style.display= "none";
+   }, 5000);
+
+} else {
+    //ここに通常アクセス時の処理
+    console.log("訪問済みです");
+    loading.style.display = "none";
+}
