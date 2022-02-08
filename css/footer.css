@@ -1,11 +1,6 @@
 .footer{
   display:flex;
   justify-content: space-between;
-  bottom:0px;
-  position:absolute;
-  left:0;
-  right:0;
-  z-index: 1;
 }
 
 .footer__nav{
