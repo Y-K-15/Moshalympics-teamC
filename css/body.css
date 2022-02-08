@@ -12,6 +12,7 @@
 .introduction-cards{
   display: flex;
   flex-flow: wrap;
+  justify-content: space-evenly;
 }
 
 .introduction-card{
@@ -23,12 +24,33 @@
   width: 250px;
   height: auto;
   margin: 30px 30px 10px 0px;
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  transition: .5s;
 }
+
+.introduction-picture:hover  {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  -webkit-transform: rotate(5deg) scale(1.1);
+  transform: rotate(5deg) scale(1.1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 
 .introduction{
   font-size: 12px;
 }
 
+.introduction-name {
+font-size: 1.2rem;
+font-family: 'Zen Kurenaido', sans-serif;
+}
+.introduction-grade {
+font-size: 1.1rem;
+font-family: 'Zen Kurenaido', sans-serif;
+}
 .members{
   width: 100%;
   height: 100%;
@@ -44,16 +66,14 @@
 
 
 
-
-
 /* view more ボタン */
 .more{
   height: 10em;
   position: relative;
 }
-.view-more-button{
-  width: 200px;
-  height: 40px;
+.view-more-button {
+  width: 250px;
+  height: 50px;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -61,6 +81,12 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   background-color:#AAC8EC ;
+  transition: .7s;
+
+}
+.view-more-button:hover  {
+  opacity: 0.3;
+  transition: .5s;
 }
 .hide-view-more-button{
   display: none;
