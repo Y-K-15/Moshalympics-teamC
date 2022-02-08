@@ -10,7 +10,6 @@
 }
 
 .introduction-cards{
-  position: absolute;
   display: flex;
   flex-flow: wrap;
 }
@@ -38,6 +37,33 @@
 .members:hover{
   opacity: 0.6;
   transition-duration: 0.9s;
+}
+
+
+
+
+
+
+
+
+/* view more ボタン */
+.more{
+  height: 10em;
+  position: relative;
+}
+.view-more-button{
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color:#AAC8EC ;
+}
+.hide-view-more-button{
+  display: none;
 }
 
 
@@ -76,4 +102,3 @@
     border-bottom: 1px solid #888482;
   }
 }
-
