@@ -9,6 +9,7 @@
   padding-top: 30px;
 }
 .introduction-cards{
+  position: absolute;
   display: flex;
   flex-flow: wrap;
 }
@@ -21,7 +22,7 @@
 .introduction-picture{
   width: 250px;
   height: auto;
-  margin: 30px 5px 10px 0px;
+  margin: 30px 30px 10px 0px;
 }
 
 .introduction{
