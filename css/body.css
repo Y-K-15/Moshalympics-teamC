@@ -6,7 +6,7 @@
 .page-title{
   color: black;
   font-size: 25px;
-  padding-top: 30px;
+  margin: 30px 0px;
 }
 
 /* div{
@@ -31,73 +31,8 @@
 }
 
 
-/* 
-.picture {
-  width: 313.48px;
-  height: 313.48px;
-  margin: 0px 0px 10px;
-} */
 
-
-/* communityのページの表のところ */
-/* .table{
-  width: 100%;
-  border-spacing: 0;
-}
-.table th{
-  border-bottom: solid 2px #ddd;
-  padding: 10px 0;
-  
-}
-.table td{
-  border-bottom: solid 2px #ddd;
-  text-align: center;
-  padding: 10px 0;
-} */
-
-
-
-/* p {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  margin: 60px auto 40px;
-} */
-/* .community-table {
-  margin: 20px auto;
-}
-.tbl-r02 th {
-  background: #fff;
-  border-bottom: solid 1px #ccc;
-  color: black;
-  padding: 10px;
-}
-.tbl-r02 td {
-  border-bottom: solid 1px #ccc;
-  padding: 10px;
-}
-
-@media screen and (max-width: 640px) {
-  .last td:last-child {
-    border-bottom: solid 1px #ccc;
-    width: 100%;
-  }
-  .tbl-r02 {
-    width: 80%;
-  }
-  .tbl-r02 td {
-    border-bottom: solid 1px #ccc;
-    display: block;
-    width: 100%;
-  }
-  .tb1-r02 th{
-    border-bottom: none 1px #ccc;
-    display: block;
-    width: 100%;
-  }
-} */
-
-
+/* Communityのページ */
 .table {
   width: 100%;
   border-collapse: collapse;
