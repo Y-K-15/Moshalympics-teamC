@@ -6,8 +6,9 @@
 .page-title{
   color: black;
   font-size: 25px;
-  padding-top: 30px;
+  margin: 30px 0px;
 }
+
 .introduction-cards{
   display: flex;
   flex-flow: wrap;
@@ -38,4 +39,40 @@
   transition-duration: 0.9s;
 }
 
+
+/* Communityのページ */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+}
+.table th {
+  width: 22%;
+  background: #aac8ec;
+  border: 1px solid #888482;
+  box-sizing: border-box;
+  padding: 15px;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: center;
+}
+.table td {
+  background: #fff;
+  border: 1px solid #888482;
+  box-sizing: border-box;
+  padding: 15px;
+  vertical-align: top;
+  text-align: left;
+}
+@media all and (max-width: 767px) {
+  .table th, .table td {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+  }
+  .table tr:last-child td:last-child {
+    border-bottom: 1px solid #888482;
+  }
+}
 
