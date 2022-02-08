@@ -24,26 +24,142 @@ function GetQueryString()
     return result;
 }
 url = GetQueryString();
-console.log(url["id"]);
 
-let members = [
-    {name:"rei", age:"21", introduction:"れいれいだよ"},
-    {name:"kento", age:"20", introduction:"けんてぃーだよ"},
-    {name:"tuyoshi", age:"19", introduction:"つよちゃんだよ"},
-    {name:"momo", age:"18", introduction:"ももちだよ"},
+var member = new Object();
+var member = [
+    { 
+        name: "じん", 
+        grade: "父", 
+        kanji: "2" 
+    },
+    { name: "こうへい", 
+    grade: "朗", 
+    kanji: "2" 
+    },
+    {
+        name: "ともあき",
+        grade: "農",
+        kanji: "2.5"
+    },
+    {
+        name: "ことき",
+        grade: "喜",
+        kanji: "2.5"
+    },
+    {
+        name: "おのかん",
+        grade: "大将",
+        kanji: "2"
+    },
+    {
+        name: "ぽんた",
+        grade: "匠",
+        kanji: "2.5"
+    },
+    {
+        name: "てらし",
+        grade: "理",
+        kanji: "2.5"
+    },
+    {
+        name: "もも",
+        grade: "才",
+        kanji: "2"
+    },
+    {
+        name: "つよし",
+        grade: "強",
+        kanji: "2.5"
+    },
+    {
+        name: "まいの",
+        grade: "芯",
+        kanji: "2.5"
+    },
+    {
+        name: "かずのり",
+        grade: "唱",
+        kanji: "2.5"
+    },
+    {
+        name: "かずき",
+        grade: "神",
+        kanji: "2.5"
+    },
+    {
+        name: "さち",
+        grade: "静",
+        kanji: "2"
+    },
+    {
+        name: "みゆき",
+        grade: "完璧",
+        kanji: "2.5"
+    },
+    {
+        name: "かれん",
+        grade: "母",
+        kanji: "2"
+    },
+    {
+        name: "れい",
+        grade: "時",
+        kanji: "2"
+    },
+    {
+        name: "えいき",
+        grade: "陽",
+        kanji: "2"
+    },
+    {
+        name: "かしけん",
+        grade: "Harbors",
+        kanji: "2"
+    },
+    {
+        name: "あきら",
+        grade: "健康",
+        kanji: "2"
+    },
+    {
+        name: "たいき",
+        grade: "中分",
+        kanji: "2"
+    },
+    {
+        name: "なおき",
+        grade: "惰",
+        kanji: "2"
+    },
+    {
+        name: "けんと",
+        grade: "高尚",
+        kanji: "2.5"
+    },
+    {
+        name: "りさ",
+        grade: "眠",
+        kanji: "2.5"
+    }
 ];
 const information = document.getElementById('information');
 
-var contents = `<div>
-<span class="member-tittle">member${url["id"]}</span>
+var contents = `
+<div class="member-whole-wrapper">
+<span class="member-tittle">member${url["id"]}
+</span>
 <div class="member-wrapper">
     <div class="member-img-wrapper">
         <img src="../picture/members${url["id"]}.jpg" alt="" class="member-img">
     </div>
     <div class="member-information">
-        <p class="">${members[url["id"]].name}</p>
-        <p class="">${members[url["id"]].age}</p>
-        <p class="">${members[url["id"]].introduction}</p>
+        <p class="member-information-name">${member[url["id"]-1].name}</p>
+        <p class="member-information-grade">${member[url["id"]-1].kanji}期生</p>
+        <span class="member-information-span">このメンバーを一言で表すと、、、
+        <p class="member-information-kanji">${member[url["id"]-1].grade}
+        </p>
+        です！
+        </span>
         
     </div>
 </div>
