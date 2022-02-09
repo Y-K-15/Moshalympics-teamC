@@ -1,7 +1,7 @@
-h1 {
-  color: aqua;
+/* h2 {
+  color: black;
   font-size: 25px;
-}
+} */
 
 .header {
   background-color: #aac8ec;
@@ -81,7 +81,7 @@ h1 {
   left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
   z-index: 1000; /* 要素をコンテンツより前面に（要調整） */
   display: none;
-  background-color: aqua;
+  background-color: #86b1e6;
 }
 .popup-content {
   /* ポップアップ本体 */

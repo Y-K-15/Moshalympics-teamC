@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moshamoshaC</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet" href="footer.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>moshamoshaC</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/body.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Murecho&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Murecho&family=Supermercado+One&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/loading.css">
 </head>
+
 <body>
+  <div class="loading" id="loading">
+    <div class="loading-text">
+      <span class="loading-text-words">P</span>
+      <span class="loading-text-words">O</span>
+      <span class="loading-text-words">S</span>
+      <span class="loading-text-words">S</span>
+      <span class="loading-text-words">E</span>
+      <span class="loading-text-words">2</span>
+
+    </div>
+  </div>
   <!-- けんとheader -->
   <header class="header wapper">
     <div class="header-content">
-      <p class="header-letter">POSSE2</p>
+      <h1 class="header-letter">POSSE2</h1>
     </div>
 
     <div class="hamburger" id="hamburger">
@@ -26,36 +46,53 @@
     </div>
   </header>
 
-  <div class="popup-cover" id="popupCover"></div>
-
-  <div class="popup-content" id="navi">
-    <ul class="menu-list">
-      <li ><a href="mosha.html">MEMBERS</a></li>
-      <li ><a href="about.html">ABOUT</a></li>
-      <li ><a href="">COMMUNITY</a></li>
-      <li ><a href="">CONTACT</a></li>
-    </ul>
-  </div>
-
-
-  <!-- つよちゃんbody gannba-->
-
-  <div id="introduction_box">
-  </div>
-  <script src="body.js"></script>
-  <!-- ももち遷移先 -->
-  <!-- 00footer -->
-    <footer class="footer">
-      <ul class="footer__nav">
-        <li><a href="https://www.instagram.com/posse_programming
-          " target="_blank">INSTAGRAM</a></li>
-        <li><a href="https://twitter.com/posse_program
-          " target="_blank">TWITTER</a></li>
-        <li><a href="https://www.facebook.com/HarborS-110032910423433" target="_blank">FACEBOOK</a></li>
+  <main class="wrapper">
+    <!--ハンバーガーメニュー押下に関連するところ  -->
+    <div class="popup-cover" id="popupCover"></div>
+    <div class="popup-content" id="navi">
+      <ul class="menu-list">
+        <li><a href="./index.html">MEMBERS</a></li>
+        <li><a href="./about/index.html">ABOUT</a></li>
+        <li><a href="./community/index.html">COMMUNITY</a></li>
+        <li>
+          <a href="https://line.me/R/ti/p/@651htnqp?from=page">CONTACT</a>
+        </li>
       </ul>
-      <p>@ Furniture Design</p>
-    </footer>
-  <script src="/mosha.js"></script>
-  <script src="header.js"></script>
+    </div>
+
+    <!-- つよちゃんbody gannba-->
+    <div class="introduction-cards" id="introduction_box">
+    </div>
+    <div class="more">
+      <button class="view-more-button" id="ViewMoreButton" onclick="viewmore()">もっとみる</button>
+    </div>
+  </main>
+  <!-- 00footer -->
+  <footer class="footer wapper">
+    <ul class="footer__nav">
+      <li>
+        <a href="https://www.instagram.com/posse_programming
+          " target="_blank">INSTAGRAM</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/posse_program
+            " target="_blank">TWITTER</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/HarborS-110032910423433" target="_blank">FACEBOOK</a>
+      </li>
+    </ul>
+    </div>
+
+  </footer>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/mosha.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/body.js"></script>
 </body>
+
 </html>
