@@ -6,7 +6,7 @@ for (let i = 1; i < 24; i++) {
   `<div class="introduction-card">`
     +`<div class="introduction-picture">`
       +`<a href="transition/index.html?id=1">`
-      +`<img class="members" src="./picture/members${i}.jpg">`
+      +`<img src="./picture/members${i}.jpg">`
       +`</a>`
     +`</div>`
     +`<div class="introduction">`

@@ -1,6 +1,15 @@
+html{
+  font-size: 1vw;
+}
+body{
+  width: 100%;
+}
 
+.container{
+  width: 100%;
+}
 .wrapper{
-  padding: 0px 40px;
+  padding: 0 2%;
 }
 
 .page-title{
@@ -9,34 +18,82 @@
   padding-top: 30px;
 }
 .introduction-cards{
-  position: absolute;
+  width: 100%;
+  height: auto;
+  /* width:auto; */
   display: flex;
-  flex-flow: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .introduction-card{
+  width: 19%;
+  height: 25%;
   display: flex;
   flex-direction: column;
+  margin: 2% 3%;
 }
 
 .introduction-picture{
-  width: 250px;
-  height: auto;
-  margin: 30px 30px 10px 0px;
-}
-
-.introduction{
-  font-size: 12px;
-}
-
-.members{
   width: 100%;
+  min-width: auto;
   height: 100%;
+  min-height: auto;
 }
 
-.members:hover{
+.introduction-picture img{
+  max-width: 100%;
+  height: auto;
+  width:auto;
+}
+
+.introduction-picture img:hover{
   opacity: 0.6;
   transition-duration: 0.9s;
 }
+.introduction{
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .introduction-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .introduction-card{
+    width: 43%;
+    height: 43%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 3%;
+  }
+  
+  .introduction-picture{
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+    min-height: auto;
+  }
+  
+  .introduction-picture img{
+    max-width: 100%;
+    height: auto;
+    width:auto;
+  }
+  
+  .introduction-picture img:hover{
+    opacity: 0.6;
+    transition-duration: 0.9s;
+  }
+  .introduction{
+    font-size: 1.5rem;
+  }
+}
+
+
 
 
