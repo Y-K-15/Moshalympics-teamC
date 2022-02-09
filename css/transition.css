@@ -1,6 +1,18 @@
 .member-whole-wrapper {
     padding: 2rem;
 }
+.member-title-wrapper {
+  height:50px;
+  display:flex;
+  text-align: center;
+  align-items: center;
+}
+.member-title-wrapper a{
+  height:100%;
+}
+.member-title-wrapper img{
+  height:100%;
+}
 .member-tittle {
     font-size: 3rem;
     font-family: 'Supermercado One', cursive;
@@ -34,13 +46,13 @@ opacity:0.1;
       opacity: 0.1;
       transform: translateX(-100px);
     }
-  
     to {
       opacity: 1;
       transform: translateX(0px);
     }
   }
-  
+
+
 .member-information {
     padding-top: 2rem;
 }
@@ -52,7 +64,34 @@ opacity:0.1;
 }
 .member-information-grade  {
     font-size: 1.5rem;
-    
+
+}
+.member-information-span {
+    font-size: 1rem;
+}
+.member-information-kanji {
+    font-size: 3rem;
+    font-family: 'Zen Kurenaido', sans-serif;
+    animation-name:fadeInAnime;
+animation-duration:3s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+.member-information-kanji::before,
+.member-information-kanji::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+}
+
+.member-information-kanji::before {
+  margin: -30px 20px 0 0;
+  border-top: 10px solid rgb(14, 106, 109);
+  border-left: 10px solid #80b8fc;
+}
+.member-information-grade  {
+    font-size: 1.5rem;
+
 }
 .member-information-span {
     font-size: 1rem;

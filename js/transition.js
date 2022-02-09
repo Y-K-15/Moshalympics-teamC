@@ -27,14 +27,14 @@ url = GetQueryString();
 
 var member = new Object();
 var member = [
-    { 
-        name: "じん", 
-        grade: "父", 
-        kanji: "2" 
+    {
+        name: "じん",
+        grade: "父",
+        kanji: "2"
     },
-    { name: "こうへい", 
-    grade: "朗", 
-    kanji: "2" 
+    { name: "こうへい",
+    grade: "朗",
+    kanji: "2"
     },
     {
         name: "ともあき",
@@ -146,21 +146,29 @@ const information = document.getElementById('information');
 
 var contents = `
 <div class="member-whole-wrapper">
-<span class="member-tittle">member${url["id"]}
-</span>
+
+<div class="member-title-wrapper">
+    <a href="./index.html">
+    <img
+    src="https://posse.anti-pattern.co.jp/img/posseLogo.png" alt="POSSEのロゴ"/>
+    </a>
+    <span class="member-tittle">
+    member${url["id"]}
+    </span>
+</div>
 <div class="member-wrapper">
     <div class="member-img-wrapper">
         <img src="../picture/members${url["id"]}.jpg" alt="" class="member-img">
     </div>
     <div class="member-information">
-        <p class="member-information-name">${member[url["id"]-1].name}</p>
-        <p class="member-information-grade">${member[url["id"]-1].kanji}期生</p>
+        <p class="member-information-name">${member[url["id"] - 1].name}</p>
+        <p class="member-information-grade">${member[url["id"] - 1].kanji
+        }期生</p>
         <span class="member-information-span">このメンバーを一言で表すと、、、
-        <p class="member-information-kanji">${member[url["id"]-1].grade}
+        <p class="member-information-kanji">${member[url["id"] - 1].grade}
         </p>
         です！
         </span>
-        
     </div>
 </div>
 </div>`;
