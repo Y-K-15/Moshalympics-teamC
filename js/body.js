@@ -1,4 +1,28 @@
 "use strict";
+function GetQueryString() {
+  var result = {};
+  if (1 < window.location.search.length) {
+    // 最初の1文字 (?記号) を除いた文字列を取得する
+    var query = window.location.search.substring(1);
+
+    // クエリの区切り記号 (&) で文字列を配列に分割する
+    var parameters = query.split("&");
+
+    for (var i = 0; i < parameters.length; i++) {
+      // パラメータ名とパラメータ値に分割する
+      var element = parameters[i].split("=");
+
+      var paramName = decodeURIComponent(element[0]);
+      var paramValue = decodeURIComponent(element[1]);
+
+      // パラメータ名をキーとして連想配列に追加する
+      result[paramName] = paramValue;
+    }
+  }
+  return result;
+}
+const url = GetQueryString();
+
 var member = new Object();
 var member = [
   {
@@ -134,10 +158,16 @@ $(".more").on("click", function () {
 });
 
 for (let i = 1; i < 24; i++) {
+  let isViewMore = "";
+  if (i < 13) {
+    isViewMore = "false";
+  } else {
+    isViewMore = "true";
+  }
   let introduction =
-    `<div class="introduction-card">` +
+    `<div class="introduction-card" id="introduction-card${i}">` +
     `<div class="introduction-picture">` +
-    `<a href="transition/index.html?id=${i}">` +
+    `<a href="transition/index.html?id=${i}&view-more=${isViewMore}">` +
     `<img class="members" src="./picture/members${i}.jpg">` +
     `</a>` +
     `</div>` +
@@ -149,6 +179,14 @@ for (let i = 1; i < 24; i++) {
   introduction_box.insertAdjacentHTML("beforeend", introduction);
 }
 $(contents + ":nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
+if (url["view-more"] == "true") {
+  $(contents + ".is-hidden")
+    .slice(0, num)
+    .removeClass("is-hidden");
+  if ($(contents + ".is-hidden").length == 0) {
+    $(".more").fadeOut();
+  }
+}
 
 // for (let i = 1; i < 13; i++) {
 // let introduction =
