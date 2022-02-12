@@ -1,4 +1,4 @@
-html{
+html {
   font-size: 1vw;
 }
 
@@ -9,7 +9,6 @@ html{
 .page-title {
   color: black;
   font-size: 25px;
-  margin: 30px 0px;
 }
 
 .introduction-cards {
@@ -47,10 +46,10 @@ html{
   transition: 0.5s;
 }
 
-.introduction-picture img{
+.introduction-picture img {
   max-width: 100%;
   height: auto;
-  width:auto;
+  width: auto;
 }
 
 .introduction-picture:hover {
@@ -66,7 +65,7 @@ html{
   font-size: 1.2rem;
   font-family: "Zen Kurenaido", sans-serif;
 }
-.introduction-grade {
+.introduction-kanji {
   font-size: 1.1rem;
   font-family: "Zen Kurenaido", sans-serif;
 }
@@ -79,7 +78,6 @@ html{
   opacity: 0.6;
   transition-duration: 0.9s;
 }
-
 
 /* view more ボタン */
 .more {
@@ -100,7 +98,7 @@ html{
 .hide-view-more-button {
   display: none;
 }
-.angles{
+.angles {
   width: 50%;
   height: 50%;
   position: relative;
@@ -174,10 +172,10 @@ html{
     transition: 0.5s;
   }
 
-  .introduction-picture img{
+  .introduction-picture img {
     max-width: 100%;
     height: auto;
-    width:auto;
+    width: auto;
   }
 
   .introduction-picture:hover {
@@ -193,7 +191,7 @@ html{
     font-size: 1.2rem;
     font-family: "Zen Kurenaido", sans-serif;
   }
-  .introduction-grade {
+  .introduction-kanji {
     font-size: 1.1rem;
     font-family: "Zen Kurenaido", sans-serif;
   }
@@ -206,7 +204,6 @@ html{
     opacity: 0.6;
     transition-duration: 0.9s;
   }
-
 }
 
 /* view more ボタン */
@@ -220,7 +217,7 @@ html{
   margin: 0;
   transform: translate(-50%, -50%);
   background-color: #aac8ec;
-  box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
   transition: 0.7s;
   border-radius: 100%;
   width: 5rem;
@@ -234,7 +231,6 @@ html{
   opacity: 0.3;
   transition: 0.5s;
 }
-
 
 .hide-view-more-button {
   display: none;
@@ -270,9 +266,10 @@ html{
   .table td {
     display: block;
     width: 100%;
-    border-bottom: none;}
+    border-bottom: none;
+  }
 
-  .more{
+  .more {
     height: 10em;
     position: relative;
     text-align: center;
@@ -305,7 +302,7 @@ html{
   .hide-view-more-button {
     display: none;
   }
-  .angles{
+  .angles {
     width: 50%;
     height: 50%;
     position: relative;
