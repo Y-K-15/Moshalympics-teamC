@@ -205,7 +205,7 @@ if (url["view-more"] == "true") {
 // };
 
 // function viewmore() {
-//   ViewMoreButton.classList.add('hide-view-more-button');
+//   ViewMoreButton.classList.add('hide--more-button');
 //   for (let i = 13; i < 24; i++) {
 //     let introduction =
 //       `<div class="introduction-card">`
