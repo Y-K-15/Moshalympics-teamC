@@ -1,5 +1,10 @@
+html{
+  font-size: 1.5vw;
+}
+
 .member-whole-wrapper {
     padding: 2rem;
+    overflow-x: hidden;
 }
 .member-title-wrapper {
   height:50px;
@@ -13,7 +18,7 @@
 .member-title-wrapper img{
   height:100%;
 }
-.member-tittle {
+.member-title {
     font-size: 3rem;
     font-family: 'Supermercado One', cursive;
     font-weight: 700;
@@ -121,4 +126,64 @@ opacity:0;
   margin: 0 0 -30px 20px;
   border-right: 10px solid #80b8fc;
   border-bottom: 10px solid rgb(14, 106, 109);
+}
+@media screen and (max-width:850px) {
+  .member-whole-wrapper {
+    padding: 2rem;
+}
+.member-title-wrapper a{
+  height:100%;
+}
+.member-title-wrapper img{
+  height: 80%;
+}
+.member-tittle {
+    font-size: 3rem;
+    font-family: 'Supermercado One', cursive;
+    font-weight: 700;
+    padding-left: 5rem;
+}
+.member-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: space-evenly;
+}
+
+.member-img-wrapper {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.member-img {
+width: 80%;
+height: 80%;
+border-radius: 10%;
+box-shadow: 10px 10px 0 #2792b9;
+animation-name:fadeInAnime;
+animation-duration:2s;
+animation-fill-mode:forwards;
+opacity:0.1;
+}
+.member-information {
+    padding-top: 0.5rem;
+    text-align: center;
+}
+.member-information-name {
+  font-size: 6rem;
+  margin: 0px;
+}
+
+.member-information-grade  {
+  font-size: 5rem;
+  margin: 0px;
+}
+.member-information-span {
+  font-size: 2.5rem;
+}
+.member-information-kanji {
+  font-size: 6rem;
+}
 }

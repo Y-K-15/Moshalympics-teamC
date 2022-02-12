@@ -114,23 +114,23 @@ var member = [
     name: "あきら",
     grade: "健康",
     kanji: "2",
-  },
-  {
+},
+{
     name: "たいき",
     grade: "中分",
     kanji: "2",
-  },
-  {
+},
+{
     name: "なおき",
     grade: "惰",
     kanji: "2",
-  },
-  {
+},
+{
     name: "けんと",
     grade: "高尚",
     kanji: "2.5",
-  },
-  {
+},
+{
     name: "りさ",
     grade: "眠",
     kanji: "2.5",
@@ -145,7 +145,7 @@ var contents = `
     <img
     src="https://posse.anti-pattern.co.jp/img/posseLogo.png" alt="POSSEのロゴ"/>
     </a>
-    <span class="member-tittle">
+    <span class="member-title">
     member${url["id"]}
     </span>
 </div>
