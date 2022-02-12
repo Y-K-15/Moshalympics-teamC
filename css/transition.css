@@ -1,123 +1,120 @@
 .member-whole-wrapper {
-    padding: 2rem;
+  padding: 2rem;
 }
 .member-title-wrapper {
-  height:50px;
-  display:flex;
+  height: 50px;
+  display: flex;
   text-align: center;
   align-items: center;
 }
-.member-title-wrapper a{
-  height:100%;
+.member-title-wrapper a {
+  height: 100%;
 }
-.member-title-wrapper img{
-  height:100%;
+.member-title-wrapper img {
+  height: 100%;
 }
 .member-tittle {
-    font-size: 3rem;
-    font-family: 'Supermercado One', cursive;
-    font-weight: 700;
-    padding-left: 5rem;
+  font-size: 3rem;
+  font-family: "Supermercado One", cursive;
+  font-weight: 700;
+  padding-left: 5rem;
 }
 .member-wrapper {
-    display: flex;
-    max-width: 1200px;
-    justify-content: space-evenly;
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-evenly;
 }
 
 .member-img-wrapper {
-    padding: 2rem;
-    width: 50%;
-    height: 50%;
+  padding: 2rem;
+  width: 50%;
+  height: 50%;
 }
 
 .member-img {
-width: 100%;
-height: 100%;
-border-radius: 10%;
-box-shadow: 20px 20px 0 #2792b9;
-animation-name:fadeInAnime;
-animation-duration:2s;
-animation-fill-mode:forwards;
-opacity:0.1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  box-shadow: 20px 20px 0 #2792b9;
+  animation-name: fadeInAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0.1;
 }
-@keyframes fadeInAnime{
-    from {
-      opacity: 0.1;
-      transform: translateX(-100px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+@keyframes fadeInAnime {
+  from {
+    opacity: 0.1;
+    transform: translateX(-100px);
   }
-
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
 .member-information {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 .member-information-name {
-    font-size: 3rem;
-    font-family: 'Murecho', sans-serif;
-    font-weight: bold;
-    color: #61a2f1;
-}
-.member-information-grade  {
-    font-size: 1.5rem;
-
-}
-.member-information-span {
-    font-size: 1rem;
+  font-size: 3rem;
+  font-family: "Murecho", sans-serif;
+  font-weight: bold;
+  color: #61a2f1;
 }
 .member-information-kanji {
-    font-size: 3rem;
-    font-family: 'Zen Kurenaido', sans-serif;
-    animation-name:fadeInAnime;
-animation-duration:3s;
-animation-fill-mode:forwards;
-opacity:0;
+  font-size: 1.5rem;
 }
-.member-information-kanji::before,
-.member-information-kanji::after {
+.member-information-span {
+  font-size: 1rem;
+}
+.member-information-grade {
+  font-size: 3rem;
+  font-family: "Zen Kurenaido", sans-serif;
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.member-information-grade::before,
+.member-information-grade::after {
   content: "";
   width: 10px;
   height: 10px;
 }
 
-.member-information-kanji::before {
+.member-information-grade::before {
   margin: -30px 20px 0 0;
   border-top: 10px solid rgb(14, 106, 109);
   border-left: 10px solid #80b8fc;
 }
-.member-information-grade  {
-    font-size: 1.5rem;
-
+.member-information-kanji {
+  font-size: 1.5rem;
 }
 .member-information-span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-.member-information-kanji {
-    font-size: 3rem;
-    font-family: 'Zen Kurenaido', sans-serif;
-    animation-name:fadeInAnime;
-animation-duration:3s;
-animation-fill-mode:forwards;
-opacity:0;
+.member-information-grade {
+  font-size: 3rem;
+  font-family: "Zen Kurenaido", sans-serif;
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
-.member-information-kanji::before,
-.member-information-kanji::after {
+.member-information-grade::before,
+.member-information-grade::after {
   content: "";
   width: 10px;
   height: 10px;
 }
 
-.member-information-kanji::before {
+.member-information-grade::before {
   margin: -30px 20px 0 0;
   border-top: 10px solid rgb(14, 106, 109);
   border-left: 10px solid #80b8fc;
 }
 
-.member-information-kanji::after {
+.member-information-grade::after {
   margin: 0 0 -30px 20px;
   border-right: 10px solid #80b8fc;
   border-bottom: 10px solid rgb(14, 106, 109);

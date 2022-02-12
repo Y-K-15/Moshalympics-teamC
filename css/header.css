@@ -32,9 +32,11 @@
   /* float: left; */
 }
 
-.header-logo {
 
-}
+.header-logo {
+ }
+
+
 .header-logo img{
   height: 45px;
 }
