@@ -11,28 +11,26 @@
   position: fixed;
   z-index: 1100;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-
 }
-
-.header-burger-ver{
+ .header-burger-ver{
   width: 100%;
   height: 65px;
   background-color: #86b1e6;
   position: fixed;
   z-index: 1100;
-}
+} 
 
 .header-inner {
   padding-top: 10px;
   padding-bottom: 10px;
   height: 45px;
   width: 90%;
-  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 .header-content{
-  float: left;
+  /* float: left; */
 }
-
 
 .header-logo {
 
@@ -42,8 +40,6 @@
 }
 
 .hamburger-wrapper{
-  float: right;
-
 
 }
 
@@ -55,7 +51,6 @@
   height: 45px;
   cursor: pointer;
   transition: 1s;
-  /* z-index: 1100; */
 }
 
 .inner_line {
@@ -82,13 +77,11 @@
 .line_2,
 .line_3 {
   background: black;
-  /* z-index: 1500; */
 
 }
 .line_1 {
   transform: translateY(20px) rotate(-45deg);
   top: 0;
-  /* z-index: 1500; */
 }
 .line_2 {
   opacity: 0;
@@ -96,7 +89,6 @@
 .line_3 {
   transform: translateY(-20px) rotate(45deg);
   bottom: 0;
-  /* z-index: 1500; */
 }
 
 /* 黒いところ */
