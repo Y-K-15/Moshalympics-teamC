@@ -26,114 +26,114 @@ var member = new Object();
 var member = [
   {
     name: "じん",
-    grade: "父",
-    kanji: "2",
+    kanji: "父",
+    grade: "2",
   },
-  { name: "こうへい", grade: "朗", kanji: "2" },
+  { name: "こうへい", kanji: "朗", grade: "2" },
   {
     name: "ともあき",
-    grade: "農",
-    kanji: "2.5",
+    kanji: "農",
+    grade: "2.5",
   },
   {
     name: "ことき",
-    grade: "喜",
-    kanji: "2.5",
+    kanji: "喜",
+    grade: "2.5",
   },
   {
     name: "おのかん",
-    grade: "大将",
-    kanji: "2",
+    kanji: "大将",
+    grade: "2",
   },
   {
     name: "ぽんた",
-    grade: "匠",
-    kanji: "2.5",
+    kanji: "匠",
+    grade: "2.5",
   },
   {
     name: "てらし",
-    grade: "理",
-    kanji: "2.5",
+    kanji: "理",
+    grade: "2.5",
   },
   {
     name: "もも",
-    grade: "才",
-    kanji: "2",
+    kanji: "才",
+    grade: "2",
   },
   {
     name: "つよし",
-    grade: "強",
-    kanji: "2.5",
+    kanji: "強",
+    grade: "2.5",
   },
   {
     name: "まいの",
-    grade: "芯",
-    kanji: "2.5",
+    kanji: "芯",
+    grade: "2.5",
   },
   {
     name: "かずのり",
-    grade: "唱",
-    kanji: "2.5",
+    kanji: "唱",
+    grade: "2.5",
   },
   {
     name: "かずき",
-    grade: "神",
-    kanji: "2.5",
+    kanji: "神",
+    grade: "2.5",
   },
   {
     name: "さち",
-    grade: "静",
-    kanji: "2",
+    kanji: "静",
+    grade: "2",
   },
   {
     name: "みゆき",
-    grade: "完璧",
-    kanji: "2.5",
+    kanji: "完璧",
+    grade: "2.5",
   },
   {
     name: "かれん",
-    grade: "母",
-    kanji: "2",
+    kanji: "母",
+    grade: "2",
   },
   {
     name: "れい",
-    grade: "時",
-    kanji: "2",
+    kanji: "時",
+    grade: "2",
   },
   {
     name: "えいき",
-    grade: "陽",
-    kanji: "2",
+    kanji: "陽",
+    grade: "2",
   },
   {
     name: "かしけん",
-    grade: "Harbors",
-    kanji: "2",
+    kanji: "Harbors",
+    grade: "2",
   },
   {
     name: "あきら",
-    grade: "健康",
-    kanji: "2",
+    kanji: "健康",
+    grade: "2",
   },
   {
     name: "たいき",
-    grade: "中分",
-    kanji: "2",
+    kanji: "中分",
+    grade: "2",
   },
   {
     name: "なおき",
-    grade: "惰",
-    kanji: "2",
+    kanji: "惰",
+    grade: "2",
   },
   {
     name: "けんと",
-    grade: "高尚",
-    kanji: "2.5",
+    kanji: "高尚",
+    grade: "2.5",
   },
   {
     name: "りさ",
-    grade: "眠",
-    kanji: "2.5",
+    kanji: "眠",
+    grade: "2.5",
   },
 ];
 const information = document.getElementById("information");
@@ -141,7 +141,9 @@ var contents = `
 <div class="member-whole-wrapper">
 
 <div class="member-title-wrapper">
-    <a href="../index.html?view-more=${url["view-more"]}#introduction-card${url["id"]}">
+    <a href="../index.html?view-more=${url["view-more"]}#introduction-card${
+  url["id"]
+}">
     <img
     src="https://posse.anti-pattern.co.jp/img/posseLogo.png" alt="POSSEのロゴ"/>
     </a>
@@ -155,11 +157,11 @@ var contents = `
     </div>
     <div class="member-information">
         <p class="member-information-name">${member[url["id"] - 1].name}</p>
-        <p class="member-information-grade">${
-          member[url["id"] - 1].kanji
+        <p class="member-information-kanji">${
+          member[url["id"] - 1].grade
         }期生</p>
         <span class="member-information-span">このメンバーを一言で表すと、、、
-        <p class="member-information-kanji">${member[url["id"] - 1].grade}
+        <p class="member-information-grade">${member[url["id"] - 1].kanji}
         </p>
         です！
         </span>
