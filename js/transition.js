@@ -147,7 +147,7 @@ var contents = `
     <img
     src="https://posse.anti-pattern.co.jp/img/posseLogo.png" alt="POSSEのロゴ"/>
     </a>
-    <span class="member-tittle">
+    <span class="member-title">
     member${url["id"]}
     </span>
 </div>
