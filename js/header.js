@@ -5,7 +5,7 @@ let line2 = document.getElementById('line2');
 let line3 =document.getElementById('line3');
 let navi = document.getElementById('navi');
 let burger = document.getElementById('hamburger')
-
+let header = document.getElementById('header')
 
 
 function hamburger() {
@@ -15,6 +15,8 @@ function hamburger() {
   navi.classList.toggle('in');
 
   document.getElementById('popupCover').classList.toggle('black-out');
+
+  header.classList.toggle('header')
 }
 
 document.getElementById('hamburger').addEventListener('click' , function () {
