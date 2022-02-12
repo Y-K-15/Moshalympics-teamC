@@ -10,8 +10,8 @@
   background-color: #86b1e6;
   position: fixed;
   z-index: 1100;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); */
-  box-shadow: 0 10px 20px rgba(0, 0, 0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
 }
 
 .header-burger-ver{
