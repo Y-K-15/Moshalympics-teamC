@@ -149,7 +149,6 @@ for (let i = 1; i < 24; i++) {
   introduction_box.insertAdjacentHTML("beforeend", introduction);
 }
 $(contents + ":nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
-
 // for (let i = 1; i < 13; i++) {
 // let introduction =
 //   `<div class="introduction-card">`
@@ -167,7 +166,7 @@ $(contents + ":nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
 // };
 
 // function viewmore() {
-//   ViewMoreButton.classList.add('hide-view-more-button');
+//   ViewMoreButton.classList.add('hide--more-button');
 //   for (let i = 13; i < 24; i++) {
 //     let introduction =
 //       `<div class="introduction-card">`
