@@ -261,6 +261,7 @@ html {
   vertical-align: top;
   text-align: left;
 }
+
 @media all and (max-width: 767px) {
   .table th,
   .table td {

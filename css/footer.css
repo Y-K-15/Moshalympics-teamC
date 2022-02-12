@@ -1,27 +1,64 @@
 .footer{
   display:flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .footer__nav{
   display:flex;
+  justify-content: space-evenly;
   list-style: none;
+  background-color: #aac8ec;
+  padding: 3rem;
 }
 
 .footer__nav a{
   color:black;
   z-index: 10;
   font-weight: lighter;
+  font-size: 2vw;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .footer__nav a :hover{
   color:gray;
 }
 
-.footer__nav li{
+.footer__nav li {
   margin-right: 30px;
-}
 
+}
+.footer-instagram {
+  padding-left: 30px;
+}
+.footer-instagram::after {
+content: "いんすたぐらむ";
+position: relative;
+top: -25px;
+left: -50px;
+font-family: "Zen Kurenaido", sans-serif;
+}
+.footer-twitter::after {
+  content: "ついったー";
+position: relative;
+top: -25px;
+left: -50px;
+font-family: "Zen Kurenaido", sans-serif;
+}
+.footer-facebook::after {
+  content: "ふぇいすぶっく";
+  position: relative;
+  top: -25px;
+  left: -50px;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+.footer-posse {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #4a86d0;
+  font-size: 1vw;
+  font-family: 'Ubuntu', sans-serif;
+}
 @media screen and (max-width: 768px) {
   .footer{
     display:block;
