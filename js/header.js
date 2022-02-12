@@ -6,6 +6,8 @@ let line3 =document.getElementById('line3');
 let navi = document.getElementById('navi');
 let burger = document.getElementById('hamburger')
 
+
+
 function hamburger() {
   line1.classList.toggle('line_1');
   line2.classList.toggle('line_2');
@@ -18,5 +20,3 @@ function hamburger() {
 document.getElementById('hamburger').addEventListener('click' , function () {
   hamburger();
 } );
-
-console.log('もしゃもしゃ')
