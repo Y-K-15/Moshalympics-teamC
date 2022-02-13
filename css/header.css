@@ -27,6 +27,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header-content{
   /* float: left; */
@@ -41,11 +42,39 @@
   height: 45px;
 }
 
-.hamburger-wrapper{
 
+.nav-pc-list{
+  display: flex;
+  flex-direction: row;
+  
+}
+.nav-pc-list li{
+  padding: 0px 20px;
+  font-size: 30px;
+}
+.nav-pc-list li a{
+  color: black;
+}
+.nav-pc-list li a:hover{
+  opacity: 0.6;
+}
+.hamburger-wrapper{
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+.nav-pc {
+  display: none;
+}
+
+.hamburger-wrapper{
+  display: block;
 }
 
 .hamburger {
+  margin-right: 40px;
+  /* ↑でハンバーガーメニュー右べたつき解消 */
   padding: 0px;
   display: block;
   position: relative;
@@ -118,6 +147,9 @@
   transition: 1s;
   /* display: none; */
 }
+.menu-list li:hover{
+  opacity: 0.6;
+}
 
 .black-out {
   display: block;
@@ -138,4 +170,6 @@
 }
 .popup-content ul li a {
   color: black;
+}
+
 }
