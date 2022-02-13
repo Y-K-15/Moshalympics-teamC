@@ -17,6 +17,8 @@ function hamburger() {
   document.getElementById('popupCover').classList.toggle('black-out');
 
   header.classList.toggle('header')
+
+  
 }
 
 document.getElementById('hamburger').addEventListener('click' , function () {
