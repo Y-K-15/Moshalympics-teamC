@@ -4,6 +4,7 @@ html {
 
 .wrapper {
   padding: 0px 40px;
+  z-index: 0;
 }
 
 .main-inner{
@@ -121,30 +122,7 @@ html {
 .community-contents div{
   margin: 60px 0px;
 }
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font-size: 14px;
-}
-.table th {
-  width: 22%;
-  background: #aac8ec;
-  border: 1px solid #888482;
-  box-sizing: border-box;
-  padding: 15px;
-  vertical-align: middle;
-  font-weight: bold;
-  text-align: center;
-}
-.table td {
-  background: #fff;
-  border: 1px solid #888482;
-  box-sizing: border-box;
-  padding: 15px;
-  vertical-align: top;
-  text-align: left;
-}
+
 @media all and (max-width: 767px) {
   .table th,
   .table td {
@@ -258,7 +236,7 @@ html {
 }
 .table th {
   width: 22%;
-  background: #aac8ec;
+  background: #c1dcff;
   border: 1px solid #888482;
   box-sizing: border-box;
   padding: 15px;
