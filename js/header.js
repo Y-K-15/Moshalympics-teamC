@@ -25,6 +25,5 @@ document.getElementById('hamburger').addEventListener('click' , function () {
     $('#body').removeClass('scroll-prevent');
     } else {
       $('#body').addClass('scroll-prevent');
-      console.log('a')
   }
 } );
