@@ -63,4 +63,13 @@ font-family: "Zen Kurenaido", sans-serif;
   .footer{
     display:block;
   }
+  .footer-instagram::after {
+    display: none;
+  }
+  .footer-twitter::after {
+    display: none;
+  }
+  .footer-facebook::after {
+    display: none;
+  }
 }
