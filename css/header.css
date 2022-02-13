@@ -2,8 +2,6 @@
   color: black;
   font-size: 25px;
 } */
-
-
 .header{
   width: 100%;
   height: 65px;
@@ -121,6 +119,16 @@
   transform: translateY(-20px) rotate(45deg);
   bottom: 0;
 }
+.scroll-prevent {
+    /*動き固定*/
+    position: fixed;
+    /*奥行きを管理*/
+    z-index: -1;
+    /*下2つで背景を元のサイズのまま表示することができる*/
+    width: 100%;
+    height: 100%;
+}
+
 
 /* 黒いところ */
 .popup-cover {
