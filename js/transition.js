@@ -122,7 +122,7 @@ var member = [
   },
   {
     name: "なおき",
-    kanji: "惰",
+    kanji: "情",
     grade: "2",
   },
   {
